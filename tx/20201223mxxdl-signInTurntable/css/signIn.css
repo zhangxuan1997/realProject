@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #fbfeed; }
+
+.writeOh, .header a, .signInSpan, .weekGift, .ruleTitle {
+  line-height: 9999rem;
+  overflow: hidden; }
+
+.header {
+  height: 5.02rem;
+  background: url(../images/signIn/header_bg.jpg) center top no-repeat;
+  background-size: 100%;
+  position: relative; }
+  .header a {
+    position: absolute;
+    top: .03rem;
+    left: .16rem;
+    width: 1.31rem;
+    height: .47rem;
+    background: url(../images/signIn/logo.png) center no-repeat;
+    background-size: 1.31rem .47rem; }
+
+.title {
+  margin-top: .43rem;
+  height: .78rem;
+  background: url(../images/signIn/signInTitle.png) center top no-repeat;
+  background-size: 3.89rem .78rem; }
+
+.signInDiv {
+  overflow: hidden;
+  height: 6.69rem;
+  background: url(../images/signIn/signIn_bg.jpg) center top no-repeat;
+  background-size: 100%;
+  margin-top: -.01rem; }
+
+.giftUl {
+  overflow: hidden;
+  text-align: center;
+  width: 6.92rem;
+  margin: .1rem auto 0; }
+  .giftUl li {
+    list-style: none;
+    display: inline-block;
+    width: 1.47rem;
+    height: 1.58rem;
+    background: url(../images/signIn/prize_bg.png) center no-repeat;
+    background-size: 1.47rem 3.2rem;
+    background-position: 0 0;
+    overflow: hidden;
+    position: relative; }
+    .giftUl li div {
+      width: 100%;
+      height: 100%; }
+    .giftUl li.getPrize {
+      background-position: 0 -1.62rem; }
+      .giftUl li.getPrize div {
+        -webkit-filter: grayscale(100%);
+                filter: grayscale(100%); }
+      .giftUl li.getPrize::after {
+        display: block; }
+    .giftUl li::after {
+      display: none;
+      content: '';
+      position: absolute;
+      top: .18rem;
+      right: .05rem;
+      width: .36rem;
+      height: .36rem;
+      background: url(../images/signIn/hasGet.png) no-repeat;
+      background-size: 100%; }
+    .giftUl li i, .giftUl li span, .giftUl li img {
+      display: block; }
+    .giftUl li i, .giftUl li span {
+      font-size: .16rem; }
+    .giftUl li i {
+      color: #d96647;
+      font-style: normal;
+      margin: .1rem auto .08rem; }
+    .giftUl li img {
+      margin: 0 auto;
+      width: .68rem;
+      height: .69rem; }
+    .giftUl li span {
+      color: #fef6de;
+      background: #d96647;
+      height: 0.3rem;
+      line-height: 0.3rem;
+      margin: 0 .12rem;
+      border-bottom-left-radius: .07rem;
+      border-bottom-right-radius: .07rem; }
+
+.author {
+  font-size: .2rem;
+  color: #69311f;
+  text-align: center; }
+  .author i {
+    display: inline-block;
+    width: 1.8rem; }
+  .author span {
+    font-size: .24rem;
+    color: #d96647;
+    text-decoration: underline; }
+
+.closeBtn, .bindBtn, .enterGame, .signInSpan, .flower {
+  background: url(../images/signIn/icon.png) no-repeat;
+  background-size: 2.1rem 4.4rem; }
+
+.signInSpan {
+  display: block;
+  width: 2.1rem;
+  height: .75rem;
+  margin: .2rem auto 0;
+  background-position: 0 -.39rem; }
+
+.recordP {
+  text-align: center;
+  color: #69311f;
+  font-size: .2rem;
+  margin-top: .03rem; }
+  .recordP span {
+    color: #d96647;
+    padding: 0 .04rem; }
+
+.rulesDiv {
+  height: 7.74rem;
+  background: url(../images/signIn/rules_bg.jpg) center top no-repeat;
+  background-size: 100%;
+  padding-top: 1.2rem; }
+
+.weekGift {
+  height: 1.05rem;
+  background: url(../images/signIn/weekGift.png) center top no-repeat;
+  background-size: 3.89rem 1.05rem; }
+
+.secondUl {
+  margin: .29rem auto .5rem; }
+
+.ruleTitle {
+  height: .76rem;
+  background: url(../images/signIn/ruleTitle.png) center top no-repeat;
+  background-size: 3.89rem .76rem; }
+
+.ruleWord {
+  color: #69311f;
+  width: 6.4rem;
+  margin: .2rem auto 0; }
+  .ruleWord li {
+    font-size: .2rem;
+    list-style-type: none;
+    line-height: .4rem; }
+
+#afooter {
+  padding-bottom: .3rem;
+  font-size: .2rem;
+  color: #69311f;
+  text-align: center;
+  line-height: .4rem; }
+
+.closeBtn {
+  display: block;
+  width: .19rem;
+  height: .2rem;
+  line-height: 999rem;
+  overflow: hidden;
+  position: absolute;
+  right: 0.14rem;
+  top: 0.14rem; }
+
+.popDiv {
+  display: none;
+  width: 5.54rem;
+  border: 1px solid #ffe5cf;
+  border-bottom: none;
+  background-color: #fffdf6;
+  border-radius: .07rem;
+  text-align: center;
+  padding: .55rem 0 .3rem 0; }
+
+.choosePop {
+  font-size: .2rem;
+  color: #1e092c; }
+  .choosePop p {
+    margin: 0 auto .2rem;
+    width: 4.02rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    background-color: #fef9e1;
+    border: 1px solid #dfc094;
+    border-radius: .07rem; }
+  .choosePop select {
+    width: 3.3rem;
+    background: none;
+    border: none;
+    outline: none; }
+
+.bindBtn {
+  display: block;
+  width: 2.1rem;
+  height: .75rem;
+  line-height: 999rem;
+  overflow: hidden;
+  background-position: 0 -1.63rem;
+  margin: 0 auto; }
+
+.getPrizeDiv, .getWeekDiv {
+  font-size: .2rem;
+  color: #69311f;
+  background-size: 5.54rem 3.32rem; }
+  .getPrizeDiv p, .getWeekDiv p {
+    height: .77rem;
+    line-height: 999rem;
+    overflow: hidden; }
+  .getPrizeDiv i, .getWeekDiv i {
+    display: block;
+    width: 1.47rem;
+    height: 1.36rem;
+    line-height: 1.36rem;
+    text-align: center;
+    margin: .27rem auto .14rem;
+    background: url(../images/signIn/popPrizeBg.png) center top no-repeat;
+    background-size: 100%;
+    overflow: hidden; }
+    .getPrizeDiv i img, .getWeekDiv i img {
+      display: block;
+      width: .6rem;
+      height: .57rem;
+      margin: .4rem auto; }
+
+.getPrizeDiv p {
+  background: url(../images/signIn/getPrize.png) center top no-repeat;
+  background-size: 3.89rem .77rem; }
+
+.enterGame {
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  width: 2.1rem;
+  height: .75rem;
+  margin-left: -1.05rem;
+  background-position: 0 -2.87rem;
+  line-height: 999rem;
+  overflow: hidden; }
+
+.noChanceDiv {
+  font-size: .2rem;
+  color: #69311f;
+  line-height: .45rem; }
+  .noChanceDiv span {
+    color: #d96647; }
+  .noChanceDiv .enterGame {
+    top: 2.5rem; }
+
+.flower {
+  position: absolute;
+  top: 0.25rem;
+  left: 0.25rem;
+  width: .19rem;
+  height: .24rem;
+  background-position: 0 -4.05rem; }
+
+.getWeekDiv {
+  padding-bottom: 0; }
+  .getWeekDiv p {
+    background: url(../images/signIn/popWeekTitle.png) center top no-repeat;
+    background-size: 3.89rem .77rem; }
+  .getWeekDiv i {
+    display: inline-block;
+    height: 1.9rem;
+    font-style: normal;
+    font-size: 0;
+    font-size: .2rem; }
+    .getWeekDiv i img {
+      margin-bottom: 0; }

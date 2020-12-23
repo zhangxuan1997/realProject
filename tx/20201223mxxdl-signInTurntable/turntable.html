@@ -1,0 +1,159 @@
+
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-CP" />
+    <meta name="Copyright" content="Tencent" />
+    <meta name="Description" content="《梦想新大陆》是由祖龙娱乐研发、腾讯游戏代理发行的旗舰级UE4回合RPG手游。由《梦幻诛仙》原团队深耕数年，在经典回合玩法上革新升级，力求突破传统呈现更多元的回合乐趣。作为国内首款采取虚幻4引擎的3D回合手游，整体画面立体生动，结合七大架空古文明世界观、创新的战斗模式及策略玩法、多维宠物定制化养成、新概念拟真社区交互、开放大世界无尽探索等特有玩法，致力为回合玩家的游戏体验创造全新的无限可能。">
+    <meta name="Keywords" content="回合,回合手游,ue4,虚幻4,新大陆,梦想新大陆">
+    <title>每日签到，天天抽好礼-梦想新大陆-腾讯游戏</title>
+    <link rel="stylesheet" href="./css/turntable.css">
+    <script>
+        //屏幕适应 
+    (function (win, doc) {
+        if (!win.addEventListener) return;
+        var html = document.documentElement;
+
+        function setFont() {
+            var html = document.documentElement;
+            var k = 750;
+            html.style.fontSize = html.clientWidth / k * 100 + "px";
+        }
+        setFont();
+        setTimeout(function () {
+            setFont();
+        }, 300);
+        doc.addEventListener('DOMContentLoaded', setFont, false);
+        win.addEventListener('resize', setFont, false);
+        win.addEventListener('load', setFont, false);
+    })(window, document);
+</script>
+</head>
+<body>
+
+    <!-- 头部 -->
+    <div class="header">
+        <a href="//d.qq.com/m" target="_blank">logo</a>
+        <p>每日签到，天天抽好礼</p>
+    </div>
+    <!-- 主体 -->
+    <div class="turntablleBox">
+        <div class="turntable">
+            <img src="./images/turntable/turntable.png" alt="">
+            <span class="clickBtn" ontouchend="PTTSendClick('btn','turntableBtn','立即抽奖');"></span>
+            <p>昵称 | 区服 | 角色<i></i><span>更换绑定</span></p>
+        </div>
+
+        <div class="rules">
+            <p class="actTitle">活动规则</p>
+            <ul>
+                <li>· 关注《梦想新大陆》公众号并答对当日问题方可参与每日一题的抽奖，每人每天都有机会抽取好礼！</li>
+                <li>· 请先绑定游戏角色再进行抽奖，以便奖品发送至您的账号。</li>
+                <li>· 奖励将直接发送至您的游戏账号内，请通过游戏中的邮箱进行查收。</li>
+                <li>· 如因系统延迟未及时收到奖励，需重新登录游戏领取。</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 弹窗 选择区服 -->
+    <div class=" popDiv choosePop" id="chooseId">
+        <p>
+            <label for="system">系统</label>
+            <select name="" id="system">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+        </p>
+        <p>
+            <label for="service">区服</label>
+            <select name="" id="service">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+        </p>
+        <p>
+            <label for="author">角色</label>
+            <select name="" id="author">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+        </p>
+        <span class="bindBtn" ontouchend="PTTSendClick('btn','bind','确认绑定');">确认绑定</span>
+
+        <!-- 关闭按钮 -->
+        <a href="javascript:closeDialog()" class="closeBtn" ontouchend="PTTSendClick('btn','closepop1','关闭');">关闭</a>
+    </div>
+    
+    <!-- 弹窗 获得奖励 -->
+    <div class=" popDiv getPrizeDiv" id="getPrizeId">
+        <p>获得奖励</p>
+        <span>
+            <img src="./images/turntable/prize.png" alt="">
+        </span>
+        以太源质*5
+        <a href="#" class="enterGame" ontouchend="PTTSendClick('btn','enterGame1','进入游戏');">进入游戏</a>
+        <!-- 关闭按钮 -->
+        <a href="javascript:closeDialog()" class="closeBtn" ontouchend="PTTSendClick('btn','closepop2','关闭');">关闭</a>
+    </div>
+
+    <!-- 弹窗 已抽奖 -->
+    <div class=" popDiv noChanceDiv" id="noChanceId">
+        <p>
+            抱歉，您今日已抽奖
+        </p>
+        <p>
+            请明天再来
+        </p>
+        <span>*每日签到福利多多，别忘了参与呀</span>
+        <a href="#" class="enterGame" ontouchend="PTTSendClick('btn','enterGame2','进入游戏');">进入游戏</a>
+        <!-- 关闭按钮 -->
+        <a href="javascript:closeDialog()" class="closeBtn" ontouchend="PTTSendClick('btn','closepop3','关闭');">关闭</a>
+    </div>
+
+
+    <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+
+    <script>
+        // 显示弹窗
+        function TGDialogS(e) {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function(Dialog) {
+                Dialog.show({
+                    id: e,
+                    bgcolor: '#000',
+                    opacity: 90
+                });
+            });
+        }
+
+        // 关闭弹窗
+        function closeDialog() {
+            // 利用milo库引入dialog组件
+            need("biz.dialog", function(Dialog) {
+                Dialog.hide();
+            });
+            $('#mod_player').html('')
+        }
+
+        //此段代码不能放到外链JS中，
+        var setSite = { //设置网站属性 
+            siteType: "a20201221signIn", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+            pageType: "turntable", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN,不支持点(.)、下划线(_)
+            pageName: "每日签到，天天抽好礼", //必填项:页面中文名 
+            project: "other", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;官网微社区base;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;皮肤skin;默认other;
+            osact: 0 //选填项:默认是0。osact=0表示非官网专题；osact=pc表示pc官网/pc官网专题；osact=m表示移动官网/移动官网专题；osact=ingame表示微社区/微社区专题
+        };
+        if (typeof(pgvMain) == 'function') pgvMain(); //千万不能忘记！
+    </script>
+</body>
+</html>

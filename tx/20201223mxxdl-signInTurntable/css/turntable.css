@@ -1,0 +1,202 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #0d0228;
+  font-family: '方正准圆';
+  src: url(../images/turntable/方正准圆简体.TTF) format("truetype"); }
+
+.writeOh, .header a, .header p {
+  line-height: 9999rem;
+  overflow: hidden; }
+
+.header {
+  height: 5.92rem;
+  background: url(../images/turntable/header_Bg.jpg) center top no-repeat;
+  background-size: 100%;
+  position: relative; }
+  .header a {
+    position: absolute;
+    top: .02rem;
+    left: .13rem;
+    width: 1.31rem;
+    height: .46rem;
+    background: url(../images/turntable/logo.png) center no-repeat;
+    background-size: 1.31rem .46rem; }
+  .header p {
+    width: 6.01rem;
+    height: 2.51rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3rem;
+    background: url(../images/turntable/slogo.png) center top no-repeat;
+    background-size: 6.01rem 2.51rem; }
+
+.turntablleBox {
+  width: 100%;
+  overflow: hidden;
+  margin-top: -.01rem;
+  height: 12.14rem;
+  background: url(../images/turntable/turntable_bg.jpg) center top no-repeat;
+  background-size: 100%; }
+
+.turntable {
+  margin-top: -.81rem;
+  height: 9.2rem;
+  position: relative; }
+  .turntable img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .turntable p {
+    position: absolute;
+    left: 0;
+    bottom: .8rem;
+    width: 100%;
+    font-size: .2rem;
+    color: #d7cdef;
+    text-align: center; }
+  .turntable i {
+    display: inline-block;
+    width: 1.8rem; }
+  .turntable span {
+    font-size: .24rem;
+    color: #fad16f;
+    text-decoration: underline; }
+
+.clickBtn {
+  position: absolute;
+  top: 3.08rem;
+  left: 50%;
+  width: 2.85rem;
+  height: 3.15rem;
+  margin-left: -1.42rem;
+  background: url(../images/turntable/btn.png) center top no-repeat;
+  background-size: 100%; }
+
+.rules {
+  font-size: .2rem;
+  color: #8675af;
+  width: 6.4rem;
+  margin: 0 auto;
+  line-height: .4rem; }
+  .rules li {
+    list-style: none;
+    line-height: .45rem; }
+
+.actTitle {
+  margin-bottom: .3rem;
+  height: .38rem;
+  line-height: 999rem;
+  overflow: hidden;
+  background: url(../images/turntable/title.png) center top no-repeat;
+  background-size: 6.4rem .38rem; }
+
+#afooter {
+  font-size: .24rem;
+  color: #8675af;
+  text-align: center;
+  margin: .2rem auto; }
+  #afooter p {
+    line-height: .35rem; }
+
+.closeBtn, .bindBtn, .enterGame {
+  background: url(../images/turntable/icon.png) no-repeat;
+  background-size: 2.67rem 2.7rem; }
+
+.closeBtn {
+  display: block;
+  width: .2rem;
+  height: .18rem;
+  line-height: 999rem;
+  overflow: hidden;
+  position: absolute;
+  right: 0.14rem;
+  top: 0.14rem; }
+
+.popDiv {
+  display: none;
+  width: 5.54rem;
+  border: 1px solid #ffe5cf;
+  border-bottom: none;
+  background-color: #fffdf6;
+  border-radius: .07rem;
+  text-align: center;
+  padding: .55rem 0 .5rem 0; }
+
+.choosePop {
+  font-size: .2rem;
+  color: #1e092c; }
+  .choosePop p {
+    margin: 0 auto .2rem;
+    width: 4.02rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    background-color: #fef9e1;
+    border: 1px solid #dfc094;
+    border-radius: .07rem; }
+  .choosePop select {
+    width: 3.3rem;
+    background: none;
+    border: none;
+    outline: none; }
+
+.bindBtn {
+  display: block;
+  width: 2.66rem;
+  height: .8rem;
+  line-height: 999rem;
+  overflow: hidden;
+  background-position: 0 -.3rem;
+  margin: 0 auto; }
+
+.getPrizeDiv {
+  font-size: .2rem;
+  color: #69311f;
+  background-size: 5.54rem 3.32rem; }
+  .getPrizeDiv p {
+    height: .38rem;
+    line-height: 999rem;
+    overflow: hidden;
+    background: url(../images/turntable/getPrize.png) center top no-repeat;
+    background-size: 4.46rem .38rem; }
+  .getPrizeDiv span {
+    display: block;
+    width: 1.27rem;
+    height: 1.14rem;
+    line-height: 1.14rem;
+    text-align: center;
+    margin: .27rem auto .14rem;
+    background: url(../images/turntable/prizeBg.png) center no-repeat;
+    background-size: 1.27rem 1.14rem;
+    overflow: hidden; }
+    .getPrizeDiv span img {
+      display: block;
+      width: .6rem;
+      height: .61rem;
+      margin: .28rem auto; }
+
+.enterGame {
+  position: absolute;
+  top: 3.6rem;
+  left: 50%;
+  width: 2.7rem;
+  height: .91rem;
+  margin-left: -1.35rem;
+  background-position: 0 -1.6rem;
+  line-height: 999rem;
+  overflow: hidden; }
+
+.noChanceDiv {
+  font-size: .2rem;
+  color: #69311f;
+  line-height: .4rem; }
+  .noChanceDiv span {
+    color: #d96647; }
+  .noChanceDiv .enterGame {
+    top: 2.5rem; }
