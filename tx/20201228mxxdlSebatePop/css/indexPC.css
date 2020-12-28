@@ -1,0 +1,187 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "������ͤԲ";
+  src: url("../images/fzlt.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.rebatePop {
+  overflow: hidden;
+  color: #f68776; }
+  .rebatePop .dia-close {
+    width: 0.24rem;
+    height: 0.24rem;
+    top: 1.89rem;
+    left: 5.52rem;
+    background: url(../images/imagesPC/1225_closeBg.png) center top no-repeat;
+    background-size: 100%; }
+
+.flexDiv {
+  height: 9.17rem;
+  width: 14.47rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end; }
+
+.leftDiv {
+  width: 5.94rem;
+  height: 9.17rem;
+  background: url(../images/imagesPC/1225_roleBg.png) center top no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+  margin-right: .3rem; }
+
+.contentDiv {
+  margin: 1.89rem 0 0 .97rem; }
+
+.titleP {
+  width: 4.9rem;
+  height: 2rem;
+  line-height: 999rem;
+  overflow: hidden;
+  margin: 0 auto;
+  background: url(../images/imagesPC/1225_popTitle.png) center top no-repeat;
+  background-size: 100%; }
+
+.amountDiv {
+  margin-top: -.55rem;
+  text-align: center;
+  font-size: .12rem; }
+  .amountDiv i {
+    padding: 0 .03rem;
+    color: #1689ff;
+    font-style: normal; }
+  .amountDiv span {
+    font-size: .16rem; }
+
+.marginDiv {
+  margin: 0 .3rem; }
+  .marginDiv li {
+    list-style-type: none;
+    font-size: .14rem; }
+
+.tipsP {
+  margin: .05rem 0;
+  font-size: .14rem; }
+
+.system {
+  overflow: hidden; }
+  .system span {
+    float: left;
+    width: 2.08rem;
+    height: 0.38rem;
+    line-height: 0.38rem;
+    text-align: center;
+    font-size: .16rem;
+    border: 2px solid #f0d3b4;
+    background-color: #f3dec8;
+    border-radius: .06rem;
+    cursor: pointer;
+    position: relative; }
+    .system span:nth-of-type(1) {
+      margin-right: .1rem; }
+      .system span:nth-of-type(1) i {
+        margin-right: .12rem;
+        background-position: 0 0; }
+    .system span:active, .system span.choose {
+      border: 2px solid #f68776; }
+    .system span i {
+      display: inline-block;
+      width: .25rem;
+      height: .29rem;
+      vertical-align: middle;
+      margin: -.03rem .15rem 0 0;
+      background: url(../images/imagesPC/1225_icon.png) no-repeat;
+      background-size: .25rem .72rem;
+      background-position: 0 -.42rem; }
+
+.inputP {
+  overflow: hidden;
+  margin-top: .1rem;
+  padding: .1rem .12rem;
+  border-radius: .06rem;
+  background-color: #f3dec8;
+  border: 2px solid #f0d3b4; }
+  .inputP select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    color: #ecb38d;
+    background: url(../images/imagesPC/1225_selectBg.png) right center no-repeat;
+    background-size: .14rem .15rem;
+    border: none;
+    width: 3.5rem;
+    float: right;
+    font-size: .16rem; }
+    .inputP select option {
+      padding: .1rem 0;
+      background-color: #f3dec8; }
+      .inputP select option:hover {
+        background-color: #f68776; }
+
+.getBtn {
+  display: block;
+  margin: .1rem 0;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  text-align: center;
+  color: #f7ece0;
+  font-size: .18rem;
+  background-color: #f58375;
+  border-radius: .06rem;
+  cursor: pointer; }
+
+.noMargin {
+  margin: 0; }
+
+.rightDiv {
+  padding: .24rem .3rem;
+  font-size: .14rem;
+  overflow: hidden;
+  background: url(../images/imagesPC/1225_rightBg.jpg) repeat;
+  border-radius: .3rem; }
+  .rightDiv div {
+    float: left;
+    background-color: #f3dec8;
+    width: 2.3rem;
+    text-align: center;
+    border: .01rem solid #f0d3b4; }
+    .rightDiv div:nth-of-type(1) {
+      border-top-left-radius: .1rem;
+      border-bottom-left-radius: .1rem; }
+    .rightDiv div:nth-of-type(2) {
+      border-right: none;
+      border-left: none;
+      background-color: #f5e4d1; }
+    .rightDiv div:nth-of-type(3) {
+      width: .8rem;
+      border-top-right-radius: .1rem;
+      border-bottom-right-radius: .1rem; }
+    .rightDiv div p {
+      overflow: hidden;
+      line-height: .3rem; }
+      .rightDiv div p:last-child {
+        border: none; }
+    .rightDiv div i {
+      font-style: normal; }
+    .rightDiv div p, .rightDiv div i {
+      border-bottom: .01rem solid #f0d3b4; }
+    .rightDiv div .rightI, .rightDiv div .leftI {
+      border: none; }
+
+.leftI {
+  overflow: hidden;
+  display: block;
+  width: 2.3rem; }
+
+.rightBorder, .rightI {
+  float: left;
+  width: 1.14rem;
+  border-right: .01rem solid #f0d3b4; }
+  .rightBorder i, .rightI i {
+    display: block; }
+  .rightBorder p, .rightBorder i, .rightI p, .rightI i {
+    line-height: .3rem; }
+  .rightBorder .longHeight, .rightI .longHeight {
+    line-height: .93rem;
+    border: none; }

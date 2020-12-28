@@ -1,0 +1,169 @@
+.rebatePop {
+  width: 5.94rem;
+  height: 13.37rem;
+  background: url(../images/imagesMobile/1228_popBg.png) right top no-repeat;
+  background-size: 5.94rem 13.37rem; }
+  .rebatePop.pop {
+    padding: 0; }
+  .rebatePop .close {
+    width: .38rem;
+    height: .39rem;
+    background: url(../images/imagesMobile/1228_close.png) no-repeat;
+    background-size: 100%;
+    top: 2.06rem;
+    right: .2rem; }
+
+.sloganP {
+  position: absolute;
+  top: 2.06rem;
+  left: .97rem;
+  width: 4.9rem;
+  height: 2rem;
+  line-height: 999rem;
+  overflow: hidden;
+  background: url(../images/imagesMobile/1228_slogan.png) center top no-repeat;
+  background-size: 100%; }
+
+.contentDiv {
+  margin: 2.09rem .3rem 1.23rem; }
+
+.marginDiv {
+  color: #f68776;
+  margin: 3.55rem .25rem 0 1.23rem; }
+  .marginDiv li {
+    list-style-type: none;
+    font-size: .16rem; }
+
+.amountDiv {
+  text-align: center;
+  font-size: .24rem;
+  line-height: .32rem; }
+  .amountDiv i {
+    padding: 0 .03rem;
+    color: #1689ff;
+    font-style: normal; }
+
+.tipsP {
+  margin: .07rem 0;
+  font-size: .24rem; }
+
+.system {
+  overflow: hidden; }
+  .system span {
+    float: left;
+    width: 2.08rem;
+    height: 0.38rem;
+    line-height: 0.38rem;
+    font-size: .16rem;
+    text-align: center;
+    border: 2px solid #f0d3b4;
+    background-color: #f3dec8;
+    border-radius: .06rem;
+    cursor: pointer;
+    position: relative; }
+    .system span:nth-of-type(1) {
+      margin-right: .1rem; }
+      .system span:nth-of-type(1) i {
+        margin-right: .12rem;
+        background-position: 0 0; }
+    .system span:active, .system span.choose {
+      border: 2px solid #f68776; }
+    .system span i {
+      display: inline-block;
+      width: .25rem;
+      height: .29rem;
+      vertical-align: middle;
+      margin: -.03rem .15rem 0 0;
+      background: url(../images/imagesPC/1228_icon.png) no-repeat;
+      background-size: .25rem .72rem;
+      background-position: 0 -.42rem; }
+
+.inputP {
+  overflow: hidden;
+  margin-top: .1rem;
+  padding: .1rem .12rem;
+  border-radius: .06rem;
+  background-color: #f3dec8;
+  border: 2px solid #f0d3b4; }
+  .inputP label {
+    font-size: .24rem; }
+  .inputP select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    color: #ecb38d;
+    background: url(../images/imagesPC/1228_selectBg.png) right center no-repeat;
+    background-size: .14rem .15rem;
+    border: none;
+    width: 3.1rem;
+    float: right;
+    font-size: .24rem;
+    height: 0.48rem;
+    line-height: 0.48rem;
+    vertical-align: middle; }
+    .inputP select option {
+      padding: .1rem 0;
+      background-color: #f3dec8; }
+      .inputP select option:hover {
+        background-color: #f68776; }
+
+.getBtn {
+  display: block;
+  margin: .1rem 0;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: center;
+  color: #f7ece0;
+  font-size: .26rem;
+  background-color: #f58375;
+  border-radius: .06rem;
+  cursor: pointer; }
+
+.noMargin {
+  margin: 0; }
+
+.overDiv {
+  font-size: .16rem;
+  overflow: hidden;
+  color: #f68776;
+  margin-left: .94rem; }
+  .overDiv div {
+    float: left;
+    background-color: #f3dec8;
+    width: 2.05rem;
+    text-align: center;
+    border: .01rem solid #f0d3b4; }
+    .overDiv div:nth-of-type(2) {
+      border-right: none;
+      border-left: none;
+      background-color: #f5e4d1; }
+    .overDiv div:nth-of-type(3) {
+      width: .8rem; }
+    .overDiv div p {
+      overflow: hidden;
+      line-height: .3rem; }
+      .overDiv div p:last-child {
+        border: none; }
+    .overDiv div i {
+      font-style: normal; }
+    .overDiv div p, .overDiv div i {
+      border-bottom: .01rem solid #f0d3b4; }
+    .overDiv div .rightI, .overDiv div .leftI {
+      border: none; }
+
+.leftI {
+  overflow: hidden;
+  display: block;
+  width: 2.05rem; }
+
+.rightBorder, .rightI {
+  float: left;
+  width: 1.01rem;
+  border-right: .01rem solid #f0d3b4; }
+  .rightBorder i, .rightI i {
+    display: block; }
+  .rightBorder p, .rightBorder i, .rightI p, .rightI i {
+    line-height: .3rem; }
+  .rightBorder .longHeight, .rightI .longHeight {
+    line-height: .93rem;
+    border: none; }

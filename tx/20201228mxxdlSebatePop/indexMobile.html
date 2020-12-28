@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="gbk" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+		<meta content="yes" name="mobile-web-app-capable">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="robots" content="all">
+		<meta name="author" content="Tencent-CP" />
+		<meta name="Copyright" content="Tencent" />
+		<meta name="Description" content="《梦想新大陆》是由祖龙娱乐研发、腾讯游戏代理发行的旗舰级UE4回合RPG手游。由《梦幻诛仙》原团队深耕数年，在经典回合玩法上革新升级，力求突破传统呈现更多元的回合乐趣。作为国内首款采取虚幻4引擎的3D回合手游，整体画面立体生动，结合七大架空古文明世界观、创新的战斗模式及策略玩法、多维宠物定制化养成、新概念拟真社区交互、开放大世界无尽探索等特有玩法，致力为回合玩家的游戏体验创造全新的无限可能。">
+		<meta name="Keywords" content="回合,回合手游,ue4,虚幻4,新大陆,梦想新大陆">
+		<title>陪你宠爱每一回合-梦想新大陆预约站-腾讯游戏</title>
+		<!-- 页面设计：cp | 页面制作：cp | 创建：2020-10-11  -->
+		<link rel="stylesheet" href="//ossweb-img.qq.com/images/js/swiper/swiper-4.3.3.min.css">
+
+		<link rel="stylesheet" type="text/css" href="//d.qq.com/cp/a20201010index/m/css/index.css" />
+		
+        <link rel="shortcut icon" href="//game.gtimg.cn/images/mxdl/cp/a20201010index/g/favicon.ico">
+        
+        <link rel="stylesheet" href="./css/indexMobile.css">
+		<style>
+			#afooter {
+				padding: 0.2rem 0;
+				background-color: #000;
+			}
+			#afooter p {
+				color: #fff;
+				font-size: 0.2rem;
+				text-align: center;
+				line-height: 0.26rem;
+			}
+
+			#afooter p a{ color: #fff; }
+			.floating{
+				display: block;
+				z-index: 11;
+				position: fixed;
+				right: .25rem;
+				top: 7rem;
+				width: 1.08rem;
+				height: 1.43rem;
+				background: url("//game.gtimg.cn/images/mxdl/cp/a20201010index/g/gz.png") no-repeat center/cover;
+			}
+			.hidden{
+				display: none;
+			}
+			.android-style{
+				margin-top: 0.74rem;
+			}
+		
+		</style>
+
+		<script>
+
+			if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+			window.location.href = "//d.qq.com/cp/a20201010index/"+location.search;
+		}
+		
+		</script>
+
+		<script>
+			//屏幕适应 
+		(function (win, doc) {
+			if (!win.addEventListener) return;
+			var html = document.documentElement;
+
+			function setFont() {
+				var html = document.documentElement;
+				var k = 750;
+				html.style.fontSize = html.clientWidth / k * 100 + "px";
+			}
+			setFont();
+			setTimeout(function () {
+				setFont();
+			}, 300);
+			doc.addEventListener('DOMContentLoaded', setFont, false);
+			win.addEventListener('resize', setFont, false);
+			win.addEventListener('load', setFont, false);
+		})(window, document);
+	</script>
+		<style type="text/css">
+			.wrap{ padding-top: .94rem;}
+			.w1{ background: none; height: 5.7rem;}
+			.w1_sj{ background:url(//game.gtimg.cn/images/mxdl/cp/a20201010index/g/m_bg1s.png) no-repeat; width: 100%; height: 1.3rem; z-index: 2; position: absolute; bottom: 0; background-size: 100%;}
+			.slogana{ background: url(//game.gtimg.cn/images/mxdl/cp/a20201010index/g/slogan1106.png) no-repeat; width: 7.5rem; height: 4.2rem; background-size: 100%;}
+			.order-box{ top: 4.66rem;}
+			#bindSuccess{
+				padding-top: .2rem;
+			}
+			.pop .pop-title{
+				margin-bottom: .1rem;
+			}
+			.qywxTips{
+				font-size: .14rem;
+				color: #fff;
+				text-align: center;
+			}
+			.m-qywx{
+				display: block;
+				width: 2rem;
+				height: 2rem;
+				margin: .1rem auto .3rem;
+				
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="wrap">
+			<div class="topbar">
+				<div class="logo ">
+					logo
+				</div>
+				<div class="topbar_btn">
+				<a href="https://d.qq.com/cp/a20201010index/m/main.html" class="btn_jrgw">进入官网</a>
+				<a href="javascript:alert('敬请期待！');" class="btn_downgame mct_download_btn" ontouchend="PTTSendClick('btn','dowload','下载游戏');">下载游戏</a>
+				</div>
+
+
+			</div>
+			<div class="w1 parts">
+				<div class="w1_sj">
+					<div class="login ">
+						<p id="unlogin">亲爱的用户，请<a id="dologin" href="javascript:TGDialogS('login');">【登录】</a></p>
+						<!-- 登录后状态 -->
+						<div id="logined" style="display: none">
+							<span>欢迎您，</span>
+							<span id="userinfo" class="nickName">XXX</span>
+							<a id="dologout" href="javascript:;" style="cursor: pointer;" ontouchend="PTTSendClick('btn','logout','注销');">【注销】</a>
+							<a href="javascript:getRecord();">【兑换记录】</a>
+						</div>
+					
+					</div>
+				</div>
+				<img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/g/kv_xlz0.jpg" id="kvxlz">
+				
+			</div>
+			<div class="w2">
+				<div class="pt44">
+					<div class="animated">
+						<div class="slogana ani_up1">
+
+						</div>
+					</div>
+
+
+					<div class="order-box ani_up2">
+						<a href="javascript:;" class="order on hd btn-order" ontouchend="PTTSendClick('order','order','立即预约');">立即预约</a>
+						<a href="javascript:;" class="bind hd btn-order" ontouchend="PTTSendClick('btn','bindsj','绑定手机');">绑定手机</a>
+						<a href="javascript:;" class="share hd btn-order" ontouchend="PTTSendClick('share','shareyl','分享有礼');">分享有礼</a>
+						<!-- <p class="order-have">已有<span id="p2_num">0</span>位造梦者完成预约</p> -->
+					</div>
+
+				</div>
+
+			</div>
+			<div class="w3 ">
+				<div class="w700 pt22 parts parts2">
+					<div class="tit tit1 ani_up1">
+
+					</div>
+
+					<div class="line_box">
+						<div class="line_box_now" style="width: 11%;">
+							<div class="line_box_act ani_jdt">
+
+							</div>
+						</div>
+
+					</div>
+
+					<div class="p1_box  ani_up3">
+						<div class="p1_item p1_item1">
+							<div class="p1_w1">
+								100W
+							</div>
+							<div class="p1_it_box p1_it_box1 ">
+
+							</div>
+						</div>
+						<div class="p1_item p1_item2">
+							<div class="p1_w2">
+								100W
+							</div>
+							<div class="p1_it_box p1_it_box2">
+
+							</div>
+						</div>
+						<div class="p1_item p1_item3">
+							<div class="p1_w3">
+								100W
+							</div>
+							<div class="p1_it_box p1_it_box3">
+
+							</div>
+						</div>
+						<div class="p1_item p1_item4">
+							<div class="p1_w4">
+								100W
+							</div>
+							<div class="p1_it_box p1_it_box4">
+
+							</div>
+						</div>
+						<div class="p1_item p1_item5">
+							<div class="p1_w5">
+								100W
+							</div>
+							<div class="p1_it_box p1_it_box5">
+
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
+			</div>
+			<div class="w4 parts">
+				<div class="p2_rw   ">
+					<!-- 如果高亮人物对应 添加act -->
+					<div class="rwjb">
+
+					</div>
+					<div class="rw1 ">
+
+					</div>
+					<div class="rw2  ">
+
+					</div>
+					<div class="rw3 ">
+
+					</div>
+					<div class="rw4  ">
+
+					</div>
+					<div class="rw5  ">
+
+					</div>
+				</div>
+				<div class="w700 pt13 p2_z">
+					<div class="tit tit2 ani_up1">
+
+					</div>
+					<a href="javascript:toggle();" class="btn_p2_yqhy  ani_up2  order-game" ontouchEnd="PTTSendClick('btn','getIntegral','邀请好友');">邀请好友</a>
+
+
+
+					<div class="p2_box ani_up3">
+						<div class="p2_item p2_item1 ani_up7">
+							<div class="p2_box_main">
+
+								<a href="javascript:void(0);" task="10" class="btn_p2_lq  order-game  task10 " ontouchEnd="PTTSendClick('btn','hy1','邀请好友1');">领取</a>
+							</div>
+						</div>
+						<div class="p2_item p2_item2 ani_up8">
+							<div class="p2_box_main">
+
+								<a href="javascript:void(0);" task="16" class="btn_p2_lq  order-game  task16 " ontouchEnd="PTTSendClick('btn','hy2','邀请好友2');">领取</a>
+							</div>
+						</div>
+						<div class="p2_item p2_item3 ani_up9">
+							<div class="p2_box_main">
+
+								<a href="javascript:void(0);" task="13" class="btn_p2_lq  order-game  task13 " ontouchEnd="PTTSendClick('btn','hy3','邀请好友3');">领取</a>
+							</div>
+						</div>
+						<div class="p2_item p2_item4 ani_up10">
+							<div class="p2_box_main">
+
+								<a href="javascript:void(0);" task="14" class="btn_p2_lq  order-game  task14 " ontouchEnd="PTTSendClick('btn','hy5','邀请好友5');">领取</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="w5">
+				<div class="w700 pt106 parts">
+					<div class="tit tit3 ani_up1">
+
+					</div>
+					<div class="w5_t1  ani_up2">
+						经过测试我们汇集了玩家的对于《梦想新大陆》的建议和意见，观点和评论。<br>
+						大家可前往微信、手Q 等地各抒己见，畅所欲言。期待与你一起寻梦，成就梦想！
+					</div>
+					<div class="p3_box_w  ani_up3">
+						<div class="p3_box">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+
+
+
+
+									<div class="swiper-slide">
+										<div class="tx_box">
+											<div class="tx_box_img">
+												<img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/g/p3_tx1.png">
+											</div>
+										</div>
+										<div class="p3_b_ms">
+											<div class="p3_name">
+												吃一碗
+											</div>
+											<div class="p3_des">
+												话说这个模型也的确做到了精细到发丝都看到，不过战斗体有待提高，不过在同类中算不错的，而且还在测试，有问题也算好解决。
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="tx_box">
+											<div class="tx_box_img">
+												<img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/g/p3_tx2.png">
+											</div>
+										</div>
+										<div class="p3_b_ms">
+											<div class="p3_name">
+												Le.Papillon爆气外露
+											</div>
+											<div class="p3_des">
+												宠物宝宝一开始的技能就几个，其实作用也不是很大但是融宝宝以后技能就多了，最多有10个技能呢，不过方式和成本可以简单点啵，那样我会更愿意多试试∑(￣□￣)
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="tx_box">
+											<div class="tx_box_img">
+												<img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/g/p3_tx3.png">
+											</div>
+										</div>
+										<div class="p3_b_ms">
+											<div class="p3_name">
+												小小九九
+											</div>
+											<div class="p3_des">
+												梦想给我的感觉是一种是一种梦幻的感觉感，海底的植物也很好看，最喜欢亚特兰地图，超绝
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="tx_box">
+											<div class="tx_box_img">
+												<img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/g/p3_tx4.png">
+											</div>
+										</div>
+										<div class="p3_b_ms">
+											<div class="p3_name">
+												流年似水流
+											</div>
+											<div class="p3_des">
+												梦想的宠物也是可以搞装备的，不过数量有限制，两件，一般就是用武器和防具，我倒觉得不用搞太多，太多了氪点也多，就简单点叭～
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="tx_box">
+											<div class="tx_box_img">
+												<img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/g/p3_tx5.png">
+											</div>
+										</div>
+										<div class="p3_b_ms">
+											<div class="p3_name">
+												是霖儿吖
+											</div>
+											<div class="p3_des">
+												感觉我看到这个游戏太晚了，错过了上次测试，期待一下下测！
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="tx_box">
+											<div class="tx_box_img">
+												<img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/g/p3_tx6.png">
+											</div>
+										</div>
+										<div class="p3_b_ms">
+											<div class="p3_name">
+												185NANA～
+											</div>
+											<div class="p3_des">
+												我还说为啥我的宠物没用染过色，搞了半天成年之后就可以染了啊，投喂树果就能给宝宝染色，别说了，我想给这玩意儿染成绿的（刘星语气）
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="tx_box">
+											<div class="tx_box_img">
+												<img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/g/p3_tx7.png">
+											</div>
+										</div>
+										<div class="p3_b_ms">
+											<div class="p3_name">
+												快爆用户14513563派蒙料理师
+											</div>
+											<div class="p3_des">
+												应该弄成随时战斗，回合制太麻烦了呀，这样的话就耽误时间了，画质蛮不错的，开测了的话，希望改一下。
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="tx_box">
+											<div class="tx_box_img">
+												<img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/g/p3_tx8.png">
+											</div>
+										</div>
+										<div class="p3_b_ms">
+											<div class="p3_name">
+												刘叔和王叔
+											</div>
+											<div class="p3_des">
+												可以给宝宝喂食物来让他们长大看起来更大就很有成就感，不过成年的宝宝都不可爱了，哭哭，我还是喜欢可爱
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+								<!-- Add Pagination -->
+								<!-- <div class="swiper-scrollbar scstopbar"></div> -->
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w6 order-award-list">
+				<div class="w700 pt6 parts">
+					<div class="tit tit4 ani_up1">
+
+					</div>
+					<div class="tit tit_mxz1 ani_up2">
+
+					</div>
+
+					<div class="w6_box flexbox2 ">
+						<div class="w6_item w6_item1 ani_up3">
+
+							<a href="//d.qq.com/cp/a20200518mxxdl/index_qw.html" class="btn_p4 btn_p4_ljcy order-game task11" task="11"
+							 ontouchend="PTTSendClick('btn','addh5','参与文明测试');">参与文明测试</a>
+
+						</div>
+						<div class="w6_item w6_item2 ani_up4">
+							<a class="btn_p4 btn_p4_ljyy order-game task1" task="1" ontouchend="PTTSendClick('order','order','预约游戏');">立即预约</a>
+							<a class="btn_p4 btn_p4_ljbd order-game task2" task="2" ontouchend="PTTSendClick('btn','bindphone','绑定手机号');">绑定手机号</a>
+						</div>
+						<div class="w6_item w6_item3 ani_up5">
+							<a href="javascript:TGDialogS('weChat');" class="btn_p4 btn_p4_ljgz order-game task7 " task="7" ontouchend="PTTSendClick('btn','gzgzh','关注公众号');">关注公众号</a>
+							<a href="//tieba.baidu.com/f?fr=wwwt&kw=%E6%A2%A6%E6%83%B3%E6%96%B0%E5%A4%A7%E9%99%86" task="3" class="btn_p4 btn_p4_qwgz order-game task3"
+							 ontouchend="PTTSendClick('link','gotb','关注贴吧');">关注贴吧</a>
+
+							<a href="//weibo.com/u/7460289753?is_all=1" task="6" class="btn_p4 btn_p4_qwgz1 order-game task6" ontouchend="PTTSendClick('link','gzwb','关注微博');">关注微博</a>
+
+							<a href="//buluo.qq.com/p/barindex.html?bid=421178" class="btn_p4 btn_p4_ljjr order-game task9" task="9"
+							 ontouchend="PTTSendClick('link','goxqbl','关注兴趣部落');">关注兴趣部落</a>
+
+
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="w7 convert-award-list ">
+				<div class="pt66 parts">
+					<div class="tit tit_mxz2 ani_up1">
+
+					</div>
+					<div class="p5_dqmxz  ani_up2">
+						当前梦想值：<span class="dream"></span>
+					</div>
+
+					<div class="w7_box w7_box1 ani_up3">
+
+						<a href="javascript:;" class="btn_w7_ljdh order-game cal1" type="1" ontouchend="PTTSendClick('btn','conversion1','兑换');">兑换</a>
+
+					</div>
+					<div class="w7_box w7_box2 ani_up4">
+						<a class="btn_w7_ljdh order-game cal2" type="2" ontouchend="PTTSendClick('btn','conversion2','兑换');">兑换</a>
+
+					</div>
+
+					<div class="p5_box  ">
+						<div class="p5_item mlr5 ani_up5">
+							<div class=" p5_item3">
+
+							</div>
+							<a class="btn_p5_dh order-game cal3" type="3" ontouchend="PTTSendClick('btn','conversion3','兑换');">兑换</a>
+
+						</div>
+						<div class="p5_item mlr5 ani_up6">
+							<div class=" p5_item4">
+
+							</div>
+							<a class="btn_p5_dh order-game cal4" type="4" ontouchend="PTTSendClick('btn','conversion4','兑换');">兑换</a>
+						</div>
+						<div class="p5_item mlr5 ani_up7">
+							<div class=" p5_item5">
+
+							</div>
+							<a class="btn_p5_dh order-game cal5" type="5" ontouchend="PTTSendClick('btn','conversion5','兑换');">兑换</a>
+						</div>
+						<div class="p5_item mlr5 ani_up8">
+							<div class=" p5_item6">
+
+							</div>
+							<a class="btn_p5_dh order-game cal6" type="6" ontouchend="PTTSendClick('btn','conversion6','兑换');">兑换</a>
+
+						</div>
+
+						<div class="p5_item mlr5 ani_up9">
+							<div class=" p5_item8">
+
+							</div>
+							<a class="btn_p5_dh order-game cal7" type="7" ontouchend="PTTSendClick('btn','conversion7','兑换');">兑换</a>
+						</div>
+						<div class="p5_item mlr5 ani_up10">
+							<div class=" p5_item7">
+
+							</div>
+							<a class="btn_p5_dh order-game cal8" type="8" ontouchend="PTTSendClick('btn','conversion8','兑换');">兑换</a>
+
+						</div>
+
+
+					</div>
+
+				</div>
+			</div>
+			<div class="w8">
+				<div class="parts">
+					<div class="w8_iconbox  ">
+						<ul>
+							<li class="ani_up1">
+								<a href="https://game.weixin.qq.com/cgi-bin/comm/openlink?appid=wx62d9035fd4fd2059&url=https%3A%2F%2Fgame.weixin.qq.com%2Fcgi-bin%2Fh5%2Fstatic%2Fgamecenter%2Fdetail.html%3Fappid%3Dwx39bde50a0857a5af%26ssid%3D49%26isAutoShowFollow%3D1%23wechat_redirect#wechat_redirect" ontouchend="PTTSendClick('btn','goWeChat','关注公众号');"><img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/g/m_w8_icon1.png"></a>
+								
+							</li>
+							<li class="ani_up6">
+									<a href="https://game.weixin.qq.com/cgi-bin/comm/openlink?appid=wx62d9035fd4fd2059&url=https%3A%2F%2Fgame.weixin.qq.com%2Fcgi-bin%2Fh5%2Fstatic%2Fappcenter%2Fsinglecircle.html%3Fappid%3Dwx39bde50a0857a5af%26ssid%3D12%23wechat_redirect#wechat_redirect"><img
+										 src="//game.gtimg.cn/images/mxdl/cp/a20201010index/g/m_w8_icon6.png"></a>
+	
+								</li>
+								<li class="ani_up5">
+										<a href="//qc.vip.qq.com/gc/pages/share/user_card.html?_wv=1&from=2008001&uin=821504675"><img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/g/m_w8_icon5.png"></a>
+		
+									</li>
+							
+							
+							<li class="ani_up4">
+								<a href="//weibo.com/u/7460289753?is_all=1"><img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/g/m_w8_icon4.png"></a>
+
+							</li>
+						
+							
+
+
+
+							<li class="ani_up3">
+									<a href="//buluo.qq.com/p/barindex.html?bid=421178"><img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/g/m_w8_icon3.png"></a>
+	
+								</li>
+							<li class="ani_up2">
+									<a href="//tieba.baidu.com/f?fr=wwwt&kw=%C3%CE%CF%EB%D0%C2%B4%F3%C2%BD"><img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/g/m_w8_icon2.png"></a>
+	
+								</li>
+
+						</ul>
+					</div>
+
+					<div class="p6_box  ani_up7">
+						<div class="p6_rule">
+							<div class="tit tit_rule">
+
+							</div>
+							<ul>
+								<li>
+									<p>活动时间：即日起至不删档测试开启当天0点结束。</p>
+								</li>
+								<li>
+									<p>活动期间，玩家完成预约即可获得100梦想值，绑定手机还可获得额外奖励。</p>
+								</li>
+								<li>
+									<p>预约活动结束后，所有官网预约玩家在不删档测试时，均可获得已解锁的最高里程碑奖励，届时请注意发放通知。</p>
+								</li>
+								<li>
+									<p>游戏礼包请于游戏内领取，届时请关注官网公告信息与游戏内公告。</p>
+								</li>
+								<li>
+									<p>如使用外挂等不正当方式参加本活动的，官方将有权取消用户参与及获奖资格。</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="pop erweimabox" id="wem">
+			<div class="erweima">
+				<img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/p6_tips1.png" >
+			</div>
+			<a href="javascript:closeDialog()" class="close hd" ontouchend="PTTSendClick('btn','closepop4','关闭');">关闭</a>
+		</div>
+
+
+
+		<!--亲爱的用户，请登录弹窗-->
+		<div class="pop login-pop" id="login">
+			<h3 class="pop-title">亲爱的用户，请登录</h3>
+			<ul class="login-ul">
+				<li class="login-li">
+					<a href="javascript:;" class="qq-login hd qq_btn" ontouchend="PTTSendClick('btn','qqlogin','QQ登录');">QQ登录</a>
+				</li>
+				<li class="login-li">
+					<a href="javascript:;" class="wx-login hd wx_btn" ontouchend="PTTSendClick('btn','wxlogin','微信登录');">微信登录</a>
+				</li>
+			</ul>
+			<a href="javascript:closeDialog()" class="close hd" ontouchend="PTTSendClick('btn','closepop4','关闭');">关闭</a>
+		</div>
+		<!--恭喜绑定成功获取礼包弹窗-->
+		<div class="pop bind-success-pop" id="bindSuccess">
+			<h3 class="pop-title">恭喜预约成功</h3>
+			<p class="qywxTips">扫码添加小助手，获取更多福利资讯</p>
+			<img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/g/mxxdl_m_qywx.jpg" alt="企业微信二维码" class="m-qywx">
+			<!-- <ul class="award-ul">
+		        <li class="award-li">
+		            <img src="//game.gtimg.cn/images/ulink/act/2971/a20200511dreamland/new/m/bind-award1.png" alt="成长秘药">
+		            <span>成长秘药*5</span>
+		        </li>
+		        <li class="award-li">
+		            <img src="//game.gtimg.cn/images/ulink/act/2971/a20200511dreamland/new/m/bind-award2.png" alt="银币">
+		            <span>1000000银币</span>
+		        </li>
+		        <li class="award-li">
+		            <img src="//game.gtimg.cn/images/ulink/act/2971/a20200511dreamland/new/m/bind-award3.png" alt="夹心鱼饼">
+		            <span>夹心鱼饼*1</span>
+		        </li>
+		    </ul> -->
+			<a href="javascript:closeDialog()" class="close hd" ontouchend="PTTSendClick('btn','closepop5','关闭');">关闭</a>
+		</div>
+		<!--预约成功弹窗-->
+		<div class="pop order-pop" id="order">
+			<h3 class="pop-title">恭喜你预约成功</h3>
+			<ul class="device-list">
+				<li class="on" platId="0">
+					<i class="choose-box"></i>
+					iOS
+				</li>
+				<li platId="1">
+					<i class="choose-box"></i>
+					Android
+				</li>
+			</ul>
+			<div class="phone">
+				<span>手机号</span>
+				<input type="text" class="input" name="phone" placeholder="请输入手机号">
+			</div>
+			<div class="phone">
+				<span>验证码</span>
+				<div class="phone-r">
+					<input type="text" class="verification" name="code" placeholder="请输入验证码">
+					<a class="get-code" ontouchend="PTTSendClick('btn','getcode1','发送验证码');">发送验证码</a>
+				</div>
+			</div>
+			<a href="javascript:;" class="order-get hd" ontouchend="PTTSendClick('btn','orderget','预约领奖');">预约领奖</a>
+			<p class="bind-desc">*绑定手机即领取*</p>
+			<ul class="award-ul">
+				<li class="award-li">
+					<img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/share-img3.png" alt="成长秘药*5" width="57" height="57">
+					<span>成长秘药×5</span>
+				</li>
+				<li class="award-li">
+					<img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/share-img4.png" alt="100000银币" width="59" height="60">
+					<span>100000银币</span>
+				</li>
+				<li class="award-li">
+					<img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/share-img5.png" alt="夹心鱼饼*1" width="50" height="61">
+					<span>夹心鱼饼×1</span>
+				</li>
+			</ul>
+			<i class="cut-line hd">分割线</i>
+			<h3 class="pop-title share-tit">分享有礼</h3>
+
+			<!-- <div class="copy-box">
+		        <p class="copy-txt"></p>
+		        <textarea class="copy-textarea copy-textarea1" ams-reserve="my-invt-url"></textarea>
+		        <a href="javascript:copyLink1();" class="copy-btn" ontouchend="PTTSendClick('btn','copybtn1','点击复制');">点击复制</a>
+		    </div> -->
+			<!-- <p class="invite-desc">或扫描二维码分享页面，邀请好友~</p>
+		    <div class="ewm-box">
+		        <img src="//game.gtimg.cn/images/ulink/act/2971/a20200511dreamland/new/m/ewm.png" alt="二维码">
+		    </div> -->
+			<p class="invite-desc">点击手机右上角分享给好友吧！</p>
+			<p class="invite-success">邀请好友预约成功，立即领取</p>
+			<ul class="award-ul award-ul2">
+				<li class="award-li">
+					<img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/share-img0.png" alt="金币*10000" width="57" height="57">
+					<span>金币×10000</span>
+				</li>
+				<li class="award-li">
+					<img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/share-img1.png" alt="赏金令*5" width="59" height="60">
+					<span>赏金令×5</span>
+				</li>
+				<li class="award-li">
+					<img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/share-img2.png" alt="棕贝豆豆*3" width="50" height="61">
+					<span>棕贝豆豆×3</span>
+				</li>
+			</ul>
+			<a href="javascript:closeDialog()" class="close hd" ontouchend="PTTSendClick('btn','closepop6','关闭');">关闭</a>
+		</div>
+		<!--点击右上角分享给好友弹窗-->
+		<div class="share-pop">
+			<img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/g/share-guide.png" alt="分享图">
+		</div>
+
+		<!--微信登录弹出-->
+		<div class="pop wechat-pop" id="wechatPop">
+			<h3 class="pop-title"></h3>
+			<p class="sorry-desc">添加官方微信，咨询福利抢先知</p>
+			<img class="wechatImg" src="//game.gtimg.cn/images/mxdl/cp/a20201010index/g/wechat20201207.png" alt="">
+			<h3 class="pop-title shareCommon"></h3>
+			<p class="invite-desc">点击手机右上角分享给好友吧~</p>
+			<p class="invite-success">邀请好友预约成功，立即领取</p>
+			<ul class="award-ul award-ul2">
+				<li class="award-li">
+					<img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/share-img0.png" alt="金币*10000" width="57" height="57">
+					<span>金币×10000</span>
+				</li>
+				<li class="award-li">
+					<img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/share-img1.png" alt="赏金令*5" width="59" height="60">
+					<span>赏金令×5</span>
+				</li>
+				<li class="award-li">
+					<img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/share-img2.png" alt="棕贝豆豆*3" width="50" height="61">
+					<span>棕贝豆豆×3</span>
+				</li>
+			</ul>
+			<a href="javascript:closeDialog()" class="close hd">关闭</a>
+		</div>
+
+		<!--QQ登录弹出-->
+		<div class="pop wechat-pop" id="QQPop">
+			<h3 class="pop-title"></h3>
+			<p class="sorry-desc">加入官方QQ群，咨询福利抢先知</p>
+			<img class="wechatImg" src="//game.gtimg.cn/images/mxdl/cp/a20201010index/g/qq20201207.png" alt="">
+			<h3 class="pop-title shareCommon"></h3>
+			<p class="invite-desc">点击手机右上角分享给好友吧~</p>
+			<p class="invite-success">邀请好友预约成功，立即领取</p>
+			<ul class="award-ul award-ul2">
+				<li class="award-li">
+					<img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/share-img0.png" alt="金币*10000" width="57" height="57">
+					<span>金币×10000</span>
+				</li>
+				<li class="award-li">
+					<img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/share-img1.png" alt="赏金令*5" width="59" height="60">
+					<span>赏金令×5</span>
+				</li>
+				<li class="award-li">
+					<img src="//game.gtimg.cn/images/mxdl/cp/a20201010index/share-img2.png" alt="棕贝豆豆*3" width="50" height="61">
+					<span>棕贝豆豆×3</span>
+				</li>
+			</ul>
+			<a href="javascript:closeDialog()" class="close hd">关闭</a>
+		</div>
+
+		<!--点击微信登录弹出-->
+		<div class="pop wxShow" id="pullUpWeChat">
+			<p class="wx-tit"></p>
+			<div><i>方式1:</i>请截图二维码并用微信扫一扫打开</div>
+			<img class="activity" src="//game.gtimg.cn/images/mxdl/cp/a20201010index/g/erweima20201209.png" alt="二维码">
+			<div><i>方式2:</i>请复制链接并前往微信内粘贴打开</div>
+			<p class="pBox">
+				<input type="text" class="copyInput" value="d.qq.com/m" readonly>
+				<a class="copyABtn" href="javascript:copyLink('copyInput');" onclick="PTTSendClick('btn','copyWeChat','点击复制');"></a>
+			</p>
+			<a href="javascript:closeDialog()" class="close hd" ontouchend="PTTSendClick('btn','closepop19','关闭');">关闭</a>
+		</div>
+
+
+		<!--兑换成功弹窗-->
+		<div class="pop feed-pop" id="convert">
+			<!-- <h3 class="pop-title convert-tit">兑换成功</h3>
+	    <img src="//game.gtimg.cn/images/ulink/act/2971/a20200511dreamland/new/m/award3-1.png" class="award-img" alt="玩具">
+	    <p class="convert-desc">游戏道具A</p>
+	    <a href="javascript:closeDialog()" class="close hd" ontouchend="PTTSendClick('btn','closepop13','关闭');">关闭</a>-->
+		</div>
+
+
+		<!--微信公众号弹窗-->
+		<div class="pop wx-pop" id="weChat">
+			<p class="wx-tit">微信公众号</p>
+			<div class="wx-box">
+				<img src="//game.gtimg.cn/images/ulink/act/2971/a20200511dreamland/new/m/pop-ewm.png" alt="微信公众号二维码">
+			</div>
+			<a href="javascript:closeDialog()" class="close hd" ontouchend="PTTSendClick('btn','closepop19','关闭');">关闭</a>
+		</div>
+
+		<!--兑换记录弹窗-->
+		<div class="pop activity-pop" id="record">
+			<h3 class="pop-title record-title">兑换记录</h3>
+			<ul class="record-ul">
+				<!-- <li class="record-li">
+					<span>金币x888</span>
+					<span>2020/2/1</span>
+				</li>
+				 -->
+			</ul>
+			<a href="javascript:closeDialog()" class="close hd" ontouchend="PTTSendClick('btn','closepop11','关闭');">关闭</a>
+		</div>
+
+		<!--抱歉，梦想值不足弹窗-->
+		<div class="pop feed-pop" id="sorry">
+			<h3 class="pop-title sorry-tit">抱歉</h3>
+			<p class="sorry-desc">亲爱的，您的梦想值不足，<br>可以通过做任务获取更多梦想值哦~</p>
+			<a href="javascript:closeDialog()" class="close hd" ontouchend="PTTSendClick('btn','closepop12','关闭');">关闭</a>
+		</div>
+
+		<!--抱歉，梦想值暂未开放弹窗-->
+		<div class="pop feed-pop" id="notOpenNow">
+			<h3 class="pop-title sorry-tit">抱歉</h3>
+			<p class="sorry-desc">暂未开放，敬请期待~</p>
+			<a href="javascript:closeDialog()" class="close hd" ontouchend="PTTSendClick('btn','closepop15','关闭');">关闭</a>
+		</div>
+
+		<!--激活码领取完毕弹窗-->
+		<div class="pop feed-pop" id="getOver">
+			<h3 class="pop-title sorry-tit">抱歉</h3>
+			<p class="sorry-desc">亲爱的用户，本次激活码已发放完毕，<br>下次激活码活动您将有优先领取权哦~</p>
+			<a href="javascript:closeDialog()" class="close hd" ontouchend="PTTSendClick('btn','closepop12','关闭');">关闭</a>
+		</div>
+<br>
+		<!--安卓用户已预约再次进入页面的弹窗提示-->
+		<div class="pop feed-pop" id="AndroidShow">
+			<p class="sorry-desc android-style">您已预约<br>请点击右上角下载按钮开始筑梦旅程~</p>
+			<a href="javascript:closeDialog()" class="close hd" ontouchend="PTTSendClick('btn','closepop14','关闭');">关闭</a>
+		</div>
+
+		<!--ios用户已预约再次进入页面的弹窗提示-->
+		<div class="pop feed-pop" id="IOSShow">
+			<p class="sorry-desc android-style">本次测试仅限安卓开放，期待下次与您再遇</p>
+			<a href="javascript:closeDialog()" class="close hd" ontouchend="PTTSendClick('btn','closepop16','关闭');">关闭</a>
+		</div>
+
+		<!-- 关注公众号浮窗 -->
+        <a href="javascript:TGDialogS('weChat');"ontouchEnd="PTTSendClick('btn','wemA','关注公众号');" class="floating hidden"></a>
+
+        <!-- 20201228返利弹窗 -->
+		<div class="pop rebatePop" id="rebateId">
+            <p class="sloganP">圆梦之旅 感谢陪伴 删档测试玩家大回馈</p>
+            <div class="marginDiv">
+                <div class="amountDiv">
+                    <span>筑梦+终极先遣测试返利:<i>XXXXXXXX</i>钻石</span>
+                    <br>
+                    包含:筑梦测试XXXXXXXX <br> 终极先遣测试XXXXXXXX
+                </div>
+                <p class="tipsP">选择手机系统</p>
+                <p class="system">
+                    <span class="choose"><i></i>苹果/IOS</span>
+                    <span><i></i>安卓/Android</span>
+                </p>
+                <p class="inputP">
+                    <label for="">渠道:</label>
+                    <select name="" id="">
+                        <option value="">选择渠道</option>
+                        <option value="">选择渠道</option>
+                        <option value="">选择渠道</option>
+                    </select>
+                </p>
+                <p class="inputP">
+                    <label for="">区服:</label>
+                    <select name="" id="">
+                        <option value="">选择区服</option>
+                    </select>
+                </p>
+                <p class="inputP">
+                    <label for="">角色名:</label>
+                    <select name="" id="">
+                        <option value="">选择角色名</option>
+                    </select>
+                </p>
+                <!-- 确认领取 按钮 -->
+                <span class="getBtn">确认领取</span>
+                <p class="tipsP noMargin">返利规则:</p>
+                <ul>
+                    <li>1.奖励一旦领取，将无法重新选择领取到其他角色，请谨慎选择；</li>
+                    <li>2.本次返利数额基于筑梦测试、终极先遣测试期间累计充值金额计算，购买成长基金、每日礼包等也包括在内；</li>
+                    <li>3.本次返利只能对您用于参与筑梦测试。终极先遣测试的同一QQ/微信账号进行返还；若返利数额不符，请检查您用于登录的官网账号是否正确；</li>
+                </ul>
+                <p class="tipsP">具体返利计算规则:</p>
+            </div>
+            
+            <div class="overDiv">
+                <div>
+                    <p>筑梦测试</p>
+                    <i class="leftI">
+                        <i class="rightBorder">
+                            <p>充值金额</p>
+                            <i class="longHeight">0-5000元</i>
+                        </i>
+                        <i class="rightI">
+                            <p>累计登录天数</p>
+                            <i>天数<7</i>
+                            <i>7≤天数<14</i>
+                            <i>天数≥14</i>
+                        </i>
+                    </i>
+                    <p>超出5000元部分</p>
+                </div>
+                <div>
+                    <p>终极先遣测试</p>
+                    <i class="leftI">
+                        <i class="rightBorder">
+                            <p>充值金额</p>
+                            <i class="longHeight">0-1000元</i>
+                        </i>
+                        <i class="rightI">
+                            <p>累计登录天数</p>
+                            <i>天数<3</i>
+                            <i>3≤天数<7</i>
+                            <i>天数≥8</i>
+                        </i>
+                    </i>
+                    <p>超出1000元部分</p>
+                </div>
+                <div class="lastDiv">
+                    <p>&nbsp;</p>
+                    <p>返利倍率</p>
+                    <p>150%</p>
+                    <p>160%</p>
+                    <p>180%</p>
+                    <p>110%</p>
+                </div>
+            </div>
+			<a href="javascript:closeDialog()" class="close hd" ontouchend="PTTSendClick('btn','closepop16','关闭');">关闭</a>
+		</div>
+        
+
+
+
+
+		<script src="//ossweb-img.qq.com/images/js/milo/util/jquery-1.11.3.min.js"></script>
+		<script src="//ossweb-img.qq.com/images/js/swiper4_component/js/swiper.min.js"></script>
+		<script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+		<script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+
+
+		<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+		<script src='//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js'></script>
+		<script src="//d.qq.com/cp/a20201010index/m/js/indexhtml.js" type="text/javascript"></script>
+		<script src="js/kv_xlz.js" type="text/javascript"></script>
+		<script>
+			// 显示弹窗
+			function TGDialogS(e) {
+				// 利用milo库引入dialog组件
+				need("biz.dialog", function(Dialog) {
+					Dialog.show({
+						id: e,
+						bgcolor: '#000',
+						opacity: 90
+					});
+				});
+			}
+			// 关闭弹窗
+			function closeDialog() {
+				// 利用milo库引入dialog组件
+				need("biz.dialog", function(Dialog) {
+					Dialog.hide();
+				});
+				$('#mod_player').html('')
+			}
+            TGDialogS('rebateId');
+
+			// 截图分享弹窗
+			var shareImg = [
+				'//game.gtimg.cn/images/ulink/act/2971/a20200511dreamland/new/m/wm-share1.png',
+				'//game.gtimg.cn/images/ulink/act/2971/a20200511dreamland/new/m/wm-share2.png',
+				'//game.gtimg.cn/images/ulink/act/2971/a20200511dreamland/new/m/wm-share3.png',
+				'//game.gtimg.cn/images/ulink/act/2971/a20200511dreamland/new/m/wm-share4.png',
+				'//game.gtimg.cn/images/ulink/act/2971/a20200511dreamland/new/m/wm-share5.png',
+				'//game.gtimg.cn/images/ulink/act/2971/a20200511dreamland/new/m/wm-share6.png',
+			];
+
+			function openShare() {
+				var index = mySwiper1.realIndex;
+				if (index > 3) {
+					return;
+				}
+				$('.print-img').attr('src', shareImg[index]);
+				$('.screen-pop').addClass('show');
+				dom2img('#toimg');
+			}
+
+			//选择设备
+			$('.device-list li').on('click', function() {
+				$(this).addClass('on').siblings().removeClass('on')
+			})
+
+			//倒计时
+			var counTime = 60,
+				phoneCount = 60,
+				phoneInterval = null,
+				counting = false;
+
+			function getCodeBtnCount() {
+				counting = true;
+				if (phoneCount != counTime) {
+					return;
+				}
+				phoneInterval = setInterval(function() {
+					phoneCount--;
+					if (phoneCount <= 0) {
+						clearInterval(phoneInterval);
+						counting = false;
+						$('.get-code').text('重新获取');
+						phoneCount = counTime;
+					} else {
+						if (!$('.get-code').hasClass('on')) {
+							$('.get-code').addClass('on')
+						}
+						$('.get-code').text(phoneCount + 's');
+					}
+				}, 1000);
+			}
+
+			//判断页面滚动条距顶部距离，以此显示公众号浮框
+			$(window).scroll(function(){
+				if($(window).scrollTop() >= 670){
+					$('.floating').removeClass('hidden');
+				}else{
+					$('.floating').addClass('hidden');
+				}
+			})		
+
+			
+			//复制链接
+			function copyLink1() {
+				$(".copy-textarea").select();
+				if (document.execCommand && document.execCommand("Copy")) {
+					alert("复制成功！")
+				}
+			}
+
+			function copyLink2() {
+				$(".copy-textarea").select();
+				if (document.execCommand && document.execCommand("Copy")) {
+					alert("复制成功！")
+				}
+			}
+			// 截图复制
+			function copyLink3() {
+				$(".copy-textarea").select();
+				if (document.execCommand && document.execCommand("Copy")) {
+					alert("复制成功！")
+				}
+			}
+
+			//复制链接
+			function copyLink(className) {
+				var copy_area = $("."+className)[0];;
+				console.log(copy_area);
+				copy_area.select();
+				copy_area.setSelectionRange(0, copy_area.value.length), document.execCommand('Copy');
+				copy_area.blur();
+				alert("复制成功");
+			}
+
+			// 点击分享蒙层消失
+			function toggle() {
+				$('.share-pop').show();
+			}
+			$('.share-pop').on('click', function() {
+				$(this).hide();
+			})
+
+
+
+			//兑换奖励图标
+			var awardImg = [{
+					url: '//game.gtimg.cn/images/mxdl/cp/a20201010index/integral2-img1.png',
+					title: '激活码',
+				},
+				{
+					url: '//game.gtimg.cn/images/mxdl/cp/a20201010index/integral2-img2.png',
+					title: '鲁鲁头像框',
+				},
+				{
+					url: '//game.gtimg.cn/images/mxdl/cp/a20201010index/integral2-img3.png',
+					title: '50000金币',
+				},
+				{
+					url: '//game.gtimg.cn/images/mxdl/cp/a20201010index/integral2-img4.png',
+					title: '体能饮料*12',
+				},
+				{
+					url: '//game.gtimg.cn/images/mxdl/cp/a20201010index/integral2-img5.png',
+					title: '徽章碎片*10',
+				},
+
+				{
+					url: '//game.gtimg.cn/images/mxdl/cp/a20201010index/integral2-img6.png',
+					title: '重塑核心*10',
+				},
+				{
+					url: '//game.gtimg.cn/images/mxdl/cp/a20201010index/integral2-img7.png',
+					title: '100000银币',
+				},
+				{
+					url: '//game.gtimg.cn/images/mxdl/cp/a20201010index/integral2-img8.png',
+					title: '棕贝豆豆*10',
+				},
+				//{
+				//	url: '//game.gtimg.cn/images/mxdl/cp/a20201010index/integral2-img8.png',
+				//	title: '魔法药剂*4',
+				//},
+			];
+			//兑换奖励方法
+			function convertAward(index) {
+				$('#convert').html('<h3 class="pop-title convert-tit">兑换成功</h3>\n' +
+					'    <img src=' + awardImg[index].url + ' class="award-img" alt=\'奖励' + index + '\'>\n' +
+					'    <p class="convert-desc">' + awardImg[index].title + '</p>\n' +
+					'    <a href="javascript:closeDialog()" class="close hd" ontouchend="PTTSendClick(\'btn\',\'closepop2' + index +
+					'\',\'关闭\');">关闭</a>')
+				$('.integral-convert' + index).hide();
+				TGDialogS('convert')
+			}
+			//关闭奖励弹窗
+			function closeAward(className) {
+				$('.' + className).hide();
+			}
+		</script>
+
+		<script>
+			//此段代码不能放到外链JS中，
+			var setSite = { //设置网站属性 
+				siteType: "a20201010index", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+				pageType: "index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN,不支持点(.)、下划线(_)
+				pageName: "陪你宠爱每一回合", //必填项:页面中文名 
+				project: "other", //选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;官网微社区base;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;皮肤skin;默认other;
+				osact: 0 //选填项:默认是0。osact=0表示非官网专题；osact=pc表示pc官网/pc官网专题；osact=m表示移动官网/移动官网专题；osact=ingame表示微社区/微社区专题
+			};
+			if (typeof(pgvMain) == 'function') pgvMain(); //千万不能忘记！
+		</script>
+
+		<script type="text/javascript" src="//ulink.qq.com/ulinksdk/dist/js/ulink.2.0.5.js"></script>
+		<script src="//d.qq.com/cp/a20201010index/m/js/index_t.js"></script>
+		<script src="//d.qq.com/cp/a20201010index/m/js/common.js"></script>
+		<script src="//d.qq.com/cp/a20201010index/m/js/qrcode.js"></script>
+		<div style="display: none;" id="qrcode"></div>
+
+
+
+
+	</body>
+
+</html>
+<!-- #t6Hl8#C662D088042E65390E773A756FB761C4 -->
